@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+// import { EventService } from './../services/EventService';
+import { Component, OnInit } from '@angular/core';
+
+
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   standalone: false,
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'to-do-list';
+export class AppComponent implements OnInit {
+  constructor() { }
+  ngOnInit(): void {
+
+  }
 }

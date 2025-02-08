@@ -1,0 +1,22 @@
+<li class="d-flex justify-content-between align-items-center">
+  <div class="form-check">
+    <label class="form-check-label" [ngClass]="cssClasses">
+      <input
+        class="checkbox"
+        type="checkbox"
+        [checked]="task.done"
+        (click)="toggleTaskDone()"
+      > {{ task.name }}
+    </label>
+  </div>
+  <div>
+    <button
+      type="button"
+      class="btn-close"
+      (click)="removeTask()"
+    >X
+    </button>
+    <!-- (click)="removeTask()" -->
+  </div>
+
+</li>

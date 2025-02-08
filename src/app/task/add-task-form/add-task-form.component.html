@@ -1,0 +1,9 @@
+<form >
+  <div>
+    <label class="visually-hidden" for="specificSizeInputName">To-do</label>
+    <input type="text" class="form-control" id="specificSizeInputName" placeholder="Enter a task" [(ngModel)]="newTaskName" name="new-task-name">
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary" (click)="$event.preventDefault(); addNewTask()">Add Task</button>
+  </div>
+</form>

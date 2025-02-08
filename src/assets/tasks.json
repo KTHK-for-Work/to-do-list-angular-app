@@ -1,0 +1,19 @@
+[
+  {
+      "name": "Buy coffee",
+      "done": false
+  },
+  {
+      "name": "Buy milk",
+      "done": true
+  },
+  {
+      "name": "Buy bread",
+      "done": false
+  },
+  {
+      "name": "Buy butter",
+      "done": true
+  }
+]
+

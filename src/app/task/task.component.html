@@ -1,0 +1,17 @@
+<div class = 'container'>
+
+  <add-task-form (addTask)="tasks.push($event)">
+  </add-task-form>
+
+  <div>
+    <task-filter
+      [(filter)]="filter">
+    </task-filter>
+  </div>
+
+  <div>
+    <task-list [tasks]="tasks.filter(filter)">
+    </task-list>
+  </div>
+
+</div>

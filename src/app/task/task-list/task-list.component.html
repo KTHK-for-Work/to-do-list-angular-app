@@ -1,0 +1,15 @@
+<div *ngIf = "tasks.length > 0 ; then showTaskList else showNoTaskMessage">
+
+</div>
+<ng-template #showTaskList>
+  <ul class="to-do-list">
+    <task-list-item
+      *ngFor="let task of tasks"
+      [task]="task"
+    >
+    </task-list-item>
+  </ul>
+</ng-template>
+<ng-template #showNoTaskMessage>
+  <p>No tasks found</p>
+</ng-template>
